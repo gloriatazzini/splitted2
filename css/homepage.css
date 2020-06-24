@@ -1,0 +1,226 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Ultrabold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Regular.otf');
+  font-weight: normal;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: repeat(12, 8.33% [col-start]);
+  grid-template-rows: 10% 3% 2% 11.66% 11.66% 11.66% 11.66% 11.66% 11.66% 2% 3% 10%;
+}
+
+.menu {
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  place-self: center;
+}
+
+.immagine {
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 10;
+  background-color: blue;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+/*.intro {
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  text-align: left;
+  color: white;
+  font-size: 2vw;
+}
+
+
+
+.descrizione{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  text-align: left;
+  color: white;
+  font-style: normal;
+  font-family: 'Messapia';
+  font-size: 1vw;
+}
+
+
+
+.indietro{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+  text-align: center;
+  color: #00CC9F;
+}
+
+.frecciaindietro{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+
+}
+
+.frecciaavanti{
+  grid-area: text;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+  justify-self: right;
+  opacity: 0.3;
+}
+
+#freccia{
+  transition: 0.3;
+}
+
+#freccia:hover{
+  transform: scale(1.3);
+}
+
+
+.avanti{
+  grid-area: text;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  text-align: left;
+  align-self: top;
+  color: #00CC9F;
+  opacity: 0.3;
+}*/
+
+.titolo1
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:0.3vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+.titolo2
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  bottom:-5.7vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+
+#menuhover
+{
+  font-family: 'Messapia';
+  font-weight: normal;
+  color: #F5222D;
+  text-decoration: none;
+  padding: 2vw;
+}
+
+#menuhover:hover {
+
+    color: #F5222D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#home{
+  font-weight: bold;
+  font-family: 'Messapia';
+    color: #F5222D;
+    padding: 2vw;
+}
+
+#sottotitolo{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+}
+
+/*#sottotitolohover{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #00CC9F;
+}
+
+#sottotitolohover:hover{
+  font-weight: bold;
+}*/
+
+#titolo{
+  font-family: 'Monument';
+  font-weight: normal;
+  padding-top:0.4vw;
+}

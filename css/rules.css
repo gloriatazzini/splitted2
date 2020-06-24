@@ -1,0 +1,306 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Ultrabold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Bold.otf');
+  font-weight: bold;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: repeat(12, 8.33% [col-start]);
+  grid-template-rows: 15% 11.66% 11.66% 11.66% 11.66% 11.66% 11.66% 15%;
+}
+
+.menu {
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+.caption {
+  grid-area: text;
+  display: flex;
+
+  grid-column-start: 5;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 3;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#caption{
+  font-weight: normal;
+  font-family: "Monument";
+  letter-spacing: 0.1em;
+  font-size: 1.6vw;
+  color: white;
+  text-align: center;
+  line-height: 140%;
+}
+
+.start {
+  grid-area: text;
+  display: flex;
+
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  align-self: flex-end;
+  justify-self: center;
+  text-align: center;
+}
+
+#start{
+  font-weight: normal;
+  font-family: "Monument";
+  letter-spacing: 0.1em;
+  font-size: 1.87vw;
+  color: white;
+  text-align: center;
+  line-height: 140%;
+  color: #00CC9F;
+  padding-left: 3.5vw;
+  padding-bottom: 0;
+  transition: 0.3s;
+}
+
+.rule1 {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 7;
+place-self: flex-start;
+  align-content: space-between;
+  padding-top: 2vw;
+}
+
+.rule1after {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  align-self: center;
+  justify-self: center;
+    width: 1px;
+    height: 25vw;
+    margin-top: 3vw;
+    background-color: #F5222D;;
+    content: '';
+}
+
+.rule2 {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  place-self: flex-start;
+  align-content: space-between;
+  padding-top: 2vw;
+}
+.rule2after {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  align-self: center;
+  justify-self: center;
+    width: 1px;
+    height: 25vw;
+    margin-top: 3vw;
+
+    background-color: #F5222D;;
+    content: '';
+}
+
+.rule3 {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  place-self: flex-start;
+  align-content: space-between;
+  padding-top: 2vw;
+}
+
+#titolo
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 4.5vw;
+  transition: 0.3s;
+}
+
+#titolo:hover{
+  transform: scale(1.2);
+}
+
+#start:hover{
+  transform: scale(1.1);
+}
+
+.titolo1
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:0.3vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+.titolo2
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  bottom:-5.7vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+#descrizione{
+  text-align: left;
+  color: white;
+  font-style: normal;
+  font-family: 'GT America';
+  line-height: 150%;
+  /*background-color:red;*/
+  font-size: 0.95vw;
+  text-align: center;
+}
+
+
+
+#menuhover:hover {
+
+    color: #F5222D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#rules{
+
+  font-weight: bold;
+
+}
+
+a
+{
+  font-family: 'Messapia';
+  font-weight: normal;
+  color: #F5222D;
+  text-decoration: none;
+  padding: 3vw;
+}
+
+
+
+#sottotitolo{
+  font-family: 'Messapia';
+  font-weight: normal;
+  color: white;
+  font-size: 1.1vw;
+  text-align: center;
+
+}
+
+#social{
+  display: flex;
+  align-self: top;
+  /*text-align: center;*/
+  justify-content: flex-start;
+  align-items: center;
+  /*background-color:red;*/
+  color: white;
+  font-style: normal;
+  font-family: 'GT America';
+  /*background-color:red;*/
+  font-size: 1vw;
+  padding:0;
+}
+
+.instagram {
+  grid-area: text;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  /*background-color:pink;*/
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  color: white;
+  padding-top: 2.5vw;
+}

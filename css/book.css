@@ -1,0 +1,1074 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Ultrabold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Regular-Italic.otf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+body {
+  background-color:  rgba(31, 31, 31, 0.9);
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 5% 10% 10% 10% 10% 10% 10% 10% 10% 10% 5%;
+  grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+}
+
+/*.libro{
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  background-color: #262626;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.15);
+}*/
+
+
+.immagine{
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 10;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color:  rgba(31, 31, 31, 1);
+}
+
+.messaggio{
+  grid-area: video;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 4;
+
+  border-radius: 20px;
+  animation-name: messaggio;
+  animation-duration: 0.5s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  justify-content: center;
+}
+
+.messaggio2{
+  grid-area: video;
+  grid-column-start: 7;
+  grid-column-end: 11;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  display: flex;
+  align-self: center;
+  border-radius: 20px;
+  animation-name: messaggio;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  height: 4vw;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+.messaggio3{
+  grid-area: video;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  display: flex;
+  align-self: center;
+  border-radius: 20px;
+  animation-name: messaggio;
+  animation-duration: 0.5s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+  height: 4vw;
+  width: 30vw;
+  margin-left: 5vw;
+}
+
+@keyframes messaggio {
+  from{
+    transform: scale(0);
+    background-color:  white;
+
+  }
+  to{
+    transform: scale(1);
+    background-color:  white;
+  }
+}
+
+#animazione{
+  animation-name: animazione;
+  animation-delay: 1s;
+  animation-duration: 1s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animazione{
+
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+#typemex{
+  color: transparent;
+  font-family: 'GT America';
+  font-weight: normal;
+  font-size: 1vw;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  /*border-right: .15em solid orange;  The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  /* Gives that scrolling effect as the typing happens */
+  animation:
+    typing 4s steps(58,end) 3s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes typing{
+
+  from{width: 0%;
+  color: black;}
+  to{width: 100%;
+  color: black;}
+}
+
+
+
+@keyframes testomex {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+    color: black;
+  }
+}
+
+#testomex{
+  color: transparent;
+  font-family: 'GT America';
+  font-weight: normal;
+  font-size: 1vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  padding-left: 1vw;
+  width:100%;
+  animation-name: testomex;
+  animation-duration: 0.3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+#testomex1{
+  color: transparent;
+  font-family: 'GT America';
+  font-weight: normal;
+  font-size: 1vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  padding-left: 1vw;
+  width:100%;
+  animation-name: testomex;
+  animation-duration: 0.3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+#testomex2{
+  color: transparent;
+  font-family: 'GT America';
+  font-weight: normal;
+  font-size: 1vw;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  padding-left: 1vw;
+  width:100%;
+  animation-name: testomex;
+  animation-duration: 0.3s;
+  animation-delay: 10s;
+  animation-fill-mode: forwards;
+}
+
+#testo3_1{
+  color: transparent;
+  font-family: 'GT America';
+  font-weight: normal;
+  font-size: 1vw;
+  width:100%;
+  animation-name: testo3_;
+  animation-duration: 0.5s;
+  animation-delay: 8s;
+  animation-fill-mode: forwards;
+}
+
+#testo3_2{
+  color: transparent;
+  font-family: 'GT America';
+  font-weight: normal;
+  font-size: 1vw;
+  width:100%;
+  animation-name: testo3_;
+  animation-duration: 0.5s;
+  animation-delay: 9s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes testo3_ {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    color: white;
+  }
+}
+
+#destinatario{
+  color: black;
+  font-family: 'GT America';
+  font-weight: bold;
+  font-size: 1vw;
+  padding: 1vw;
+  width:100%;
+}
+
+
+
+@keyframes testomex {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+    color: black;
+  }
+}
+
+.testo0 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  place-self: center;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 150%;
+  color: white;
+  /*-webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+        columns: 2 auto;
+        column-gap: 10%;
+        column-fill: auto;*/
+
+}
+
+
+
+.testo0_1 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  place-self: center;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 150%;
+  color: white;
+  /*-webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+        columns: 2 auto;
+        column-gap: 10%;
+        column-fill: auto;*/
+
+}
+
+.testo1 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+  /*-webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+        columns: 2 auto;
+        column-gap: 10%;
+        column-fill: auto;*/
+
+}
+
+.testo2 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+.testo3 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+.testo3x_1 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  font-family: 'GT America';
+  font-weight: normal;
+  align-self: flex-end;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+.testo3x_2 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  font-family: 'GT America';
+  font-weight: normal;
+  align-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+.testo4 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 4;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+#scelta{
+  text-align: center;
+}
+
+.scelta {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 4;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+  padding: 5vw;
+}
+
+.scelta1 {
+  grid-area: video;
+  display: flex;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  font-weight: normal;
+  justify-self: flex-end;
+  text-align: center;
+  color: #00CC9F;
+}
+
+.scelta2 {
+  grid-area: video;
+  display: flex;
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  font-weight: normal;
+  justify-self: flex-start;
+  text-align: center;
+  color: #00CC9F;
+}
+
+.testo5 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+.testo6 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: white;
+}
+
+.testo7 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: center;
+  line-height: 150%;
+  color: white;
+}
+
+.testoanimazione1 {
+  grid-area: video;
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  font-family: 'GT America';
+  font-weight: normal;
+  justify-content: flex-start;
+  place-self: center;
+  font-size: 1vw;
+  text-align: left;
+  line-height: 150%;
+  color: transparent;
+  /*-webkit-columns: 2 auto;
+  -moz-columns: 2 auto;
+        columns: 2 auto;
+        column-gap: 10%;
+        column-fill: auto;*/
+        animation-name: testo2;
+        animation-duration: 2s;
+        animation-delay: 3.5s;
+        animation-fill-mode: forwards;
+}
+
+@keyframes testo2 {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+    color: white;
+  }
+}
+
+#direzioni{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+  padding: 1vw;
+}
+
+
+#a{
+  display: flex;
+  align-items: center;
+  color: #00CC9F;
+  text-decoration:none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#a:hover{
+  transform: scale(1.1);
+}
+
+.next{
+  grid-area: text;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  display: flex;
+  align-self: top;
+  /*text-align: center;*/
+  justify-content: center;
+  align-items: flex-end;
+  /*background-color:red;*/
+  color: #00CC9F;
+
+}
+
+.start{
+  grid-area: text;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  display: flex;
+  align-self: top;
+  /*text-align: center;*/
+  justify-content: center;
+  /*background-color:red;*/
+  color: #00CC9F;
+}
+
+/*.pagdx {
+  grid-area: video;
+  grid-column-start: 9;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 8;
+  font-family: "GT America";
+  font-size: 1vw;
+  text-align: justify;
+  hyphens: auto;
+  line-height: 150%;
+}*/
+
+.frecce a{
+  display: flex;
+  align-items: center;
+  color: #00CC9F;
+  text-decoration:none;
+}
+
+
+
+
+
+.frecciasx{
+  display: flex;
+  grid-area: text;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  /*text-align: center;*/
+  justify-content: flex-end;
+  padding-right: 2vw;
+  align-items: center;
+  /*background-color:red;*/
+  color: #00CC9F;
+
+}
+
+.frecciadx{
+  display: flex;
+  grid-area: text;
+  grid-column-start: 11;
+  grid-column-end: 12;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  align-self: top;
+  /*text-align: center;*/
+  justify-content: flex-start;
+  padding-left: 2vw;
+  align-items: center;
+  /*background-color:red;*/
+  color: #00CC9F;
+
+}
+
+
+#freccia:hover{
+  transform: scale(1.4);
+}
+
+#freccia{
+    transition: 0.3s;
+}
+
+
+.foto1{
+  grid-area: video;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 7;
+  background-image: url("../images/REMEMBER/device/device_2.1.png");
+  background-position-x: left;
+  background-position-y: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.bottone1{
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 6;
+  grid-row-end: 6;
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin: -5%;
+  transition: 0.2s;
+}
+
+.bottone1:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+.foto2{
+  grid-area: video;
+  grid-column-start: 5;
+  grid-column-end: 8;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  background-image: url("../images/REMEMBER/device/device_2.2.png");
+  background-position-x: left;
+  background-position-y: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.bottone2{
+  grid-area: video;
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin: -5%;
+  transition: 0.2s;
+}
+
+.bottone2:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+.foto3{
+  grid-area: video;
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 5;
+  grid-row-end: 9;
+  background-image: url("../images/REMEMBER/device/device_2.3.png");
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.bottone3{
+  grid-area: video;
+  grid-column-start: 5;
+  grid-column-end: 5;
+  grid-row-start: 8;
+  grid-row-end: 8;
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin: -5%;
+  transition: 0.2s;
+}
+
+.bottone3:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+.foto4{
+  grid-area: video;
+  grid-column-start: 6;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 7;
+  background-image: url("../images/REMEMBER/invitation2/invitation2_2.1.png");
+  background-position-x: right;
+  background-position-y: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.bottone4{
+  grid-area: video;
+  grid-column-start: 8;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin: -5%;
+  transition: 0.2s;
+}
+
+.bottone4:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+.foto5{
+  grid-area: video;
+  grid-column-start: 7;
+  grid-column-end: 10;
+  grid-row-start: 6;
+  grid-row-end: 10;
+  background-image: url("../images/REMEMBER/invitation2/invitation2_2.2.png");
+  background-position-x: right;
+  background-position-y: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+.bottone5{
+  grid-area: video;
+  grid-column-start: 9;
+  grid-column-end: 9;
+  grid-row-start: 5;
+  grid-row-end: 5;
+  display: flex;
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin: -5%;
+  transition: 0.2s;
+}
+
+.bottone5:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+/*.intro {
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  text-align: left;
+  color: white;
+  font-size: 2vw;
+}
+
+
+
+.descrizione{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  text-align: left;
+  color: white;
+  font-style: normal;
+  font-family: 'Messapia';
+  font-size: 1vw;
+}
+
+
+
+.indietro{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+  text-align: center;
+  color: #00CC9F;
+}
+
+.frecciaindietro{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+
+}
+
+.frecciaavanti{
+  grid-area: text;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+  justify-self: right;
+  opacity: 0.3;
+}
+
+#freccia{
+  transition: 0.3;
+}
+
+#freccia:hover{
+  transform: scale(1.3);
+}
+
+
+.avanti{
+  grid-area: text;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  text-align: left;
+  align-self: top;
+  color: #00CC9F;
+  opacity: 0.3;
+}*/
+
+
+
+
+/*#menuhover
+{
+  font-family: 'Messapia';
+  font-weight: normal;
+  color: #F5222D;
+  text-decoration: none;
+  padding: 2vw;
+}
+
+#menuhover:hover {
+
+    color: #F5222D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#home{
+  font-weight: bold;
+  font-family: 'Messapia';
+    color: #F5222D;
+    padding: 2vw;
+}*/
+
+#sottotitolo{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+  text-decoration: none;
+}
+
+.end{
+  grid-area: video;
+  display: flex;
+  grid-column-start: 3;
+  grid-column-end: 7;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  justify-content: flex-start;
+  align-self: center;
+
+}
+
+#end{
+  text-align: left;
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #00CC9F;
+}
+
+#end:hover{
+  transform: scale(1.05);
+}
+
+/*#sottotitolohover{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #00CC9F;
+}
+
+#sottotitolohover:hover{
+  font-weight: bold;
+}*/
+
+#titolo{
+  font-family: 'Monument';
+  font-weight: normal;
+  padding-top:0.4vw;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'GT America';
+  color: white;
+}
+
+#social{
+  display: flex;
+  /*text-align: center;*/
+  align-items: center;
+  /*background-color:red;*/
+  justify-content: center;
+}
+
+.titolo1
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:0.3vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.titolo2
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  bottom:-5.7vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+  opacity: 0.3;
+  z-index: -1;
+}

@@ -1,0 +1,351 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Ultrabold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Regular.otf');
+  font-weight: normal;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 5% 11.25% 11.25% 11.25% 11.25% 11.25% 11.25% 11.25% 11.25% 5%;
+  grid-template-rows: 10% 8% 8% 8% 8% 8% 8% 8% 8% 8% 8% 10%;
+}
+
+.cover:hover{
+  cursor: pointer;
+}
+
+.cover{
+  grid-area: video;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  height: 80vh;
+  width: 80vh;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+z-index: 2;
+background-image: url("../images/REMEMBER/slide/cover.png");
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.cover2{
+  grid-area: video;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  height: 80vh;
+  width: 80vh;
+  display: none;
+  justify-self: center;
+  align-self: center;
+z-index: 2;
+background-image: url("../images/REMEMBER/slide/cover.png");
+background-position: center;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+.background{
+  grid-area: video;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  grid-row-start: 1;
+  grid-row-end: 13;
+  height: 80vh;
+  width: 80vh;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  background-image: url("../images/REMEMBER/slide/background.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.descrizione {
+  grid-area: text;
+  grid-column-start: 6;
+  grid-column-end: 10;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  text-align: center;
+  color: black;
+  font-family: "GT America";
+  font-style: normal;
+  line-height: 150%;
+  font-size: 0.9vw;
+  align-self: center;
+  background-color: white;
+}
+
+.libro{
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  background-color: blue;
+}
+
+.tablet{
+  grid-area: video;
+  grid-column-start: 3;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  background-color: white;
+}
+
+.finito {
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 4;
+  grid-row-end: 10;
+background-color: blue;
+display: none;
+}
+
+.corretto {
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 14;
+  grid-row-start: 2;
+  grid-row-end: 12;
+  background-color: white;
+  display: none;
+  place-self:center;
+  height: 100%;
+  width:100%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /*font-family: "Monument";
+  font-size: 1.3vw;
+
+  align-self: center;
+  letter-spacing: -0.2em;
+  line-height: 150%;*/
+}
+
+#link{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1.1vw;
+  color: #00CC9F;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+}
+
+/*.immagine {
+  grid-area: video;
+  grid-column-start: 2;
+  grid-column-end: 12;
+  grid-row-start: 2;
+  grid-row-end: 12;
+
+  background-image: url("../images/Moodboard_Aether.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}*/
+
+
+
+/*.intro {
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+  text-align: left;
+  color: white;
+  font-size: 2vw;
+}
+
+
+
+.descrizione{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 9;
+  text-align: left;
+  color: white;
+  font-style: normal;
+  font-family: 'Messapia';
+  font-size: 1vw;
+}
+
+
+
+.indietro{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+  text-align: center;
+  color: #00CC9F;
+}
+
+.frecciaindietro{
+  grid-area: text;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+
+}
+
+.frecciaavanti{
+  grid-area: text;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  align-self: top;
+  justify-self: right;
+  opacity: 0.3;
+}
+
+#freccia{
+  transition: 0.3;
+}
+
+#freccia:hover{
+  transform: scale(1.3);
+}
+
+
+.avanti{
+  grid-area: text;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 9;
+  grid-row-end: 10;
+  text-align: left;
+  align-self: top;
+  color: #00CC9F;
+  opacity: 0.3;
+}*/
+
+.titolo1
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+.titolo2
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+
+#menuhover
+{
+  font-family: 'Messapia';
+  font-weight: normal;
+  color: #F5222D;
+  text-decoration: none;
+  padding: 2vw;
+}
+
+#menuhover:hover {
+
+    color: #F5222D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#home{
+  font-weight: bold;
+  font-family: 'Messapia';
+    color: #F5222D;
+    padding: 2vw;
+}
+
+#sottotitolo{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+}
+
+/*#sottotitolohover{
+  font-family: 'Messapia';
+  font-weight: normal;
+  font-size: 1vw;
+  text-decoration: none;
+  color: #00CC9F;
+}
+
+#sottotitolohover:hover{
+  font-weight: bold;
+}*/
+
+#titolo{
+  font-family: 'Monument';
+  font-weight: normal;
+  padding-top:0.4vw;
+}

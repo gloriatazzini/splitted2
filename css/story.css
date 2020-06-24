@@ -1,0 +1,350 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Regular.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Messapia';
+  src: url('../fonts/Messapia-Bold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Monument';
+  src: url('../fonts/MonumentExtended-Ultrabold.otf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'GT America';
+  src: url('../fonts/GT-America-Regular.otf');
+  font-weight: normal;
+}
+
+body {
+  background: #1f1f1f;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: repeat(12, 8.33% [col-start]);
+  grid-template-rows: 15% 11.66% 11.66% 11.66% 11.66% 11.66% 11.66% 15%;
+}
+
+.menu {
+  grid-area: header;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  place-self: center;
+}
+
+
+.immagine {
+  grid-area: image;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  background-image: url("../images/Indice.png");
+  background-position-y: center;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+.ending:hover{
+  background-color:rgba(245,245,245,0);
+  cursor: not-allowed;
+}
+
+/*.ending::after {
+    width: 1rem;
+    height: 1px;
+    bottom: 1rem;
+    position: absolute;
+    background-color: #595959;
+    content: '';
+    opacity: 0.3;
+}*/
+
+.ending {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  grid-area: text;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color:rgba(245,245,245,0.7);
+  transition-duration: 0.3s;
+  /*padding-top: 1vw;*/
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #595959;
+}
+
+.act3:hover{
+  background-color:rgba(217,217,217,0);
+  cursor: not-allowed;
+}
+
+/*.act3::after {
+    width: 1rem;
+    height: 1px;
+    bottom: 1rem;
+    position: absolute;
+    background-color: #595959;
+    content: '';
+    opacity: 0.3;
+}*/
+
+.act3{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  grid-area: text;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  text-align: center;
+  transition-duration: 0.3s;
+  background-color:rgba(217,217,217,0.6);
+  color: #595959;
+}
+
+.act2:hover{
+  background-color:rgba(140,140,140,0);
+  cursor: not-allowed;
+}
+
+/*.act2::after {
+    width: 1rem;
+    height: 1px;
+    bottom: 1rem;
+    position: absolute;
+    background-color: #FAFAFA;
+    content: '';
+    opacity: 0.3;
+}*/
+
+.act2{
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  text-align: center;
+  background-color:rgba(140,140,140,0.6);
+  transition-duration: 0.3s;
+  color: #FAFAFA;
+}
+
+.act1:hover{
+  background-color:rgba(67,67,67,0);
+
+}
+
+/*.act1::after {
+    width: 1rem;
+    height: 1px;
+    bottom: 1rem;
+    position: absolute;
+    background-color: #FAFAFA;
+    content: '';
+}*/
+
+.act1{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  grid-area: text;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 5;
+  grid-row-end: 7;
+  text-align: center;
+  background-color:rgba(67,67,67,0.7);
+  transition-duration: 0.3s;
+  color: #FAFAFA;
+}
+
+.intro:hover {
+  background-color:rgba(38,38,38,0);
+}
+
+/*.intro::after {
+    width: 1rem;
+    height: 1px;
+    bottom: 1rem;
+    position: absolute;
+    background-color: #FAFAFA;
+    content: '';
+}*/
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  grid-area: text;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 7;
+  grid-row-end: 8;
+  text-align: center;
+  background-color:rgba(38,38,38,0.7);
+  transition-duration: 0.3s;
+  color: #FAFAFA;
+}
+
+
+
+
+
+
+.titolo1
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  top:0.3vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+.titolo2
+{
+  font-family: 'Monument';
+  font-weight: bold;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: fixed;
+  left:50%;
+  bottom:-5.7vw;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.1em;
+}
+
+
+a
+{
+  font-family: 'Messapia';
+  font-weight: normal;
+  color: #F5222D;
+  text-decoration: none;
+  padding: 3vw;
+}
+
+#menuhover:hover {
+
+    color: #F5222D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#story{
+  font-weight: bold;
+}
+
+#sottotitolobloccato{
+  font-family: 'Messapia';
+  font-weight: bold;
+  opacity: 0.4;
+  padding: 0.4vw;
+  text-shadow: 0px 1px #595959;
+}
+
+#sottotitolobloccato:hover{
+cursor: not-allowed;
+opacity: 1;
+}
+
+#sottotitolo{
+  font-family: 'Messapia';
+  font-weight: bold;
+  padding: 0.2vw;
+}
+
+#trattino{
+  font-family: 'Messapia';
+  font-weight: normal;
+}
+
+#titolobloccato{
+  font-family: 'Monument';
+  font-weight: normal;
+  opacity: 0.3;
+  letter-spacing: 0.1em;
+
+}
+
+#titolo{
+  font-family: 'Monument';
+  font-weight: normal;
+  letter-spacing: 0.1em;
+}
+
+#social{
+  display: flex;
+  align-self: top;
+  /*text-align: center;*/
+  justify-content: flex-start;
+  align-items: center;
+  /*background-color:red;*/
+  color: white;
+  font-style: normal;
+  font-family: 'GT America';
+  /*background-color:red;*/
+  font-size: 1vw;
+  padding:0;
+}
+
+.instagram {
+  grid-area: text;
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 8;
+  grid-row-end: 9;
+  /*background-color:pink;*/
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+  color: white;
+  padding-top: 2.5vw;
+}
