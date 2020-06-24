@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/code.css">
+
+  <title>Splitted</title>
+  <base target="_parent">
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+  <div class="immagine"></div>
+
+  <!--<a class="avanti"><a>
+  <a class="indietro"><a>
+
+    <div class="frecciasx">
+      <a href="pag_2.html">
+      <img id="freccia" src="images/indietro.png">
+      </a>
+    </div>
+
+    <div class="frecciadx">
+      <a href="pag_4.html">
+      <img id="freccia" src="images/avanti.png">
+      </a>
+    </div>-->
+
+<div class="sfondo"></div>
+
+
+      <h1 class="intro">Insert password</h1>
+
+        <input class="input" type="text" name="user_input" id="i_p" value = "" style="outline:none" autocomplete="off" >
+        <button class="enter" id = "submit" style="outline:none">Enter</button>
+
+
+        <p id="o_p" style="display: none"></p>
+        <p id="code" style="display: none"></p>
+        <p class="info1" id="check"></p>
+        <!--<p id="is_game">Keep guessing</p>
+      </div>
+      <div class="info2">
+          <p></p>
+        <ul id = "step" style = "list-style: none;">
+        <li>
+            <b>Guess    &nbsp;&nbsp;&nbsp;     Result</b>
+          </li>-->
+
+          <div class="rule1" id = "rules">
+
+              <p>
+                <b>Guess the password: it is composed of 4 numbers,<br> which may be used more than once.</b>
+
+              <br><br>
+
+                <b>Y</b> indicates a number is in the correct position
+
+              <br>  <br>
+
+                <b>E</b> indicates a number part of the code, but not in the right position <br>(regardless of how many times the number exists in the code)
+
+              <br>  <br>
+
+                 <b>X</b> indicates a number which is not part of the codes
+              </p>
+            </div>
+
+      <!--<div class="rules" id = "rules">-->
+
+
+          <!--<p>
+            You lose if you fail to guess the code under 10 guesses.
+          </p>
+          <br>-->
+          <!--<p>
+            <b>Y</b> indicates a number is in the correct position
+          </p>
+          <br>
+          <p>
+            <b>E</b> indicates a number part of the code, but not in the right position (regardless of how many times the number exists in the code)
+          </p>
+          <br>
+          <p>
+             <b>X</b> indicates a number which is not part of the codes
+          </p>
+        </div>-->
+
+
+
+<div class="corretto">
+<h1 id="titolo">Password correct</h1>
+<div id="descrizione">
+  <img id="freccia" src="images/cloud-off.svg">
+
+  Impossible to establish a connection with the cloud.
+
+</div>
+<div id="descrizione">
+  <img id="freccia" src="images/download.svg">
+  <a href="images/download.zip" id="link" download>Click here</a> to download data locally on your device.
+</div>
+</div>
+
+<div class="fine">
+<div id="descrizione2">
+  Your download is ready.
+  <br><br>
+  <a id="link2" href="tablet_6.html">Click here</a>
+</div>
+</div>
+
+
+    <!--<div class="chiudi">
+      <a href="#">
+      <img id="freccia" src="images/chiudi.png">
+      </a>
+    </div>-->
+
+</div>
+   <script type="text/javascript" src="js/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+   </script>
+   <script type="text/javascript" src='js/code.js'></script>
+</body>
+
+</html>
